@@ -1,0 +1,23 @@
+#carousel {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+
+#carousel > * {
+    width: 100%;
+    flex-shrink: 0;
+    user-select: none;
+    scroll-snap-align: center;
+    --left-position: 0;
+}
